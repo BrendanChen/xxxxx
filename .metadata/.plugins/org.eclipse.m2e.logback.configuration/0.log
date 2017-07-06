@@ -2436,3 +2436,30 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2017-07-06 16:54:32,477 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2017-07-06 16:54:32,480 [Worker-271] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-07-06 16:54:32,483 [Worker-271] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace6\SpringMVC\src\test\resources
+2017-07-06 17:25:20,175 [Worker-251] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:spring4-mvc-maven-annotation:0.0.1-SNAPSHOT @ D:\workspace6\spring4-mvc-maven-annotation\pom.xml.
+2017-07-06 17:25:21,680 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:25:21,683 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-06 17:25:21,694 [Worker-275] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:25:21,698 [Worker-275] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace6\spring4-mvc-maven-annotation\src\test\resources
+2017-07-06 17:26:25,483 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:26:25,495 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-06 17:26:25,503 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:26:25,505 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace6\SpringMVC\src\test\resources
+2017-07-06 17:26:29,126 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:26:29,130 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-06 17:26:29,134 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:26:29,137 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace6\spring4-mvc-maven-annotation\src\test\resources
+2017-07-06 17:27:23,188 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:27:23,202 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-06 17:27:23,204 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:27:23,208 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace6\spring4-mvc-maven-annotation\src\test\resources
+2017-07-06 17:32:04,884 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:spring4-mvc-maven-annotation:0.0.1-SNAPSHOT @ D:\workspace6\spring4-mvc-maven-annotation\pom.xml.
+2017-07-06 17:32:05,491 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:32:05,494 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-07-06 17:32:05,496 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:32:05,498 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace6\spring4-mvc-maven-annotation\src\test\resources
+2017-07-06 17:32:06,936 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SpringMVC:spring4-mvc-maven-annotation:0.0.1-SNAPSHOT @ D:\workspace6\spring4-mvc-maven-annotation\pom.xml.
+2017-07-06 17:32:07,765 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:32:07,769 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-07-06 17:32:07,771 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-07-06 17:32:07,774 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace6\spring4-mvc-maven-annotation\src\test\resources
