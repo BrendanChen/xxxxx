@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths/>
+ <validation>
+  <el>
+   <linked-el length="22" name="%0" offset="1033" path="%1"/>
+   <linked-el length="22" name="%0" offset="10038" path="%2"/>
+   <linked-el length="17" name="%3" offset="2940" path="%4"/>
+   <linked-el length="16" name="%3" offset="6143" path="%4"/>
+   <linked-el length="20" name="%5" offset="10549" path="%2"/>
+   <linked-el length="20" name="%5" offset="1263" path="%1"/>
+   <linked-el length="22" name="%6" offset="1056" path="%1"/>
+   <linked-el length="22" name="%6" offset="10061" path="%2"/>
+   <linked-el length="16" name="%7" offset="6696" path="%8"/>
+   <linked-el length="17" name="%9" offset="2940" path="%4"/>
+   <linked-el length="17" name="%10" offset="6529" path="%8"/>
+   <linked-el length="103" name="%10" offset="6031" path="%8"/>
+   <linked-el length="20" name="%10" offset="6421" path="%8"/>
+   <linked-el length="20" name="%10" offset="6006" path="%8"/>
+   <linked-el length="16" name="%10" offset="6696" path="%8"/>
+   <linked-el length="93" name="%10" offset="6219" path="%8"/>
+   <linked-el length="20" name="%11" offset="6939" path="%4"/>
+   <linked-el length="17" name="%12" offset="6529" path="%8"/>
+   <linked-el length="20" name="%12" offset="6421" path="%8"/>
+   <linked-el length="20" name="%12" offset="6006" path="%8"/>
+   <linked-el length="22" name="%13" offset="1033" path="%1"/>
+   <linked-el length="22" name="%13" offset="10038" path="%2"/>
+   <linked-el length="22" name="%13" offset="1056" path="%1"/>
+   <linked-el length="22" name="%13" offset="10061" path="%2"/>
+   <linked-el length="22" name="%14" offset="6914" path="%8"/>
+   <linked-el length="22" name="%14" offset="6989" path="%8"/>
+   <linked-el length="22" name="%15" offset="6914" path="%8"/>
+   <linked-el length="22" name="%15" offset="6989" path="%8"/>
+   <linked-el length="16" name="%16" offset="6143" path="%4"/>
+   <linked-el length="31" name="%17" offset="6570" path="%4"/>
+   <linked-el length="29" name="%18" offset="7544" path="%4"/>
+   <linked-el length="82" name="%18" offset="7626" path="%4"/>
+   <linked-el length="29" name="%18" offset="7366" path="%4"/>
+   <linked-el length="28" name="%19" offset="1306" path="%1"/>
+   <linked-el length="28" name="%19" offset="1335" path="%1"/>
+   <linked-el length="28" name="%19" offset="10602" path="%2"/>
+   <linked-el length="28" name="%19" offset="10631" path="%2"/>
+   <linked-el length="103" name="%20" offset="6031" path="%8"/>
+   <linked-el length="93" name="%20" offset="6219" path="%8"/>
+   <linked-el length="17" name="%21" offset="6859" path="%4"/>
+   <linked-el length="15" name="%22" offset="6799" path="%8"/>
+   <linked-el length="15" name="%22" offset="6704" path="%4"/>
+   <linked-el length="15" name="%22" offset="6482" path="%4"/>
+   <linked-el length="25" name="%22" offset="6641" path="%4"/>
+   <linked-el length="18" name="%23" offset="7867" path="%4"/>
+   <linked-el length="28" name="%24" offset="1335" path="%1"/>
+   <linked-el length="28" name="%24" offset="10631" path="%2"/>
+   <linked-el length="28" name="%25" offset="1306" path="%1"/>
+   <linked-el length="28" name="%25" offset="10602" path="%2"/>
+   <linked-el length="29" name="%26" offset="7544" path="%4"/>
+   <linked-el length="82" name="%26" offset="7626" path="%4"/>
+   <linked-el length="18" name="%26" offset="7867" path="%4"/>
+   <linked-el length="14" name="%26" offset="7250" path="%4"/>
+   <linked-el length="18" name="%26" offset="7892" path="%4"/>
+   <linked-el length="29" name="%26" offset="7366" path="%4"/>
+   <linked-el length="9" name="%27" offset="1001" path="%1"/>
+   <linked-el length="10" name="%27" offset="5866" path="%8"/>
+   <linked-el length="9" name="%27" offset="9996" path="%2"/>
+   <linked-el length="17" name="%28" offset="6859" path="%4"/>
+   <linked-el length="20" name="%28" offset="6939" path="%4"/>
+   <linked-el length="82" name="%29" offset="7626" path="%4"/>
+   <linked-el length="18" name="%30" offset="7892" path="%4"/>
+   <linked-el length="20" name="%31" offset="6893" path="%8"/>
+   <linked-el length="16" name="%31" offset="6972" path="%8"/>
+   <linked-el length="42" name="%32" offset="4269" path="%4"/>
+   <linked-el length="31" name="%33" offset="6570" path="%4"/>
+   <linked-el length="20" name="%34" offset="6893" path="%8"/>
+   <linked-el length="16" name="%34" offset="6972" path="%8"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="kindCodeVO.kindNo" value="%0"/>
+  <alias path="recipeVO" value="%3"/>
+  <alias path="cookWayCodeList" value="%5"/>
+  <alias path="kindCodeVO.kindName" value="%6"/>
+  <alias path="listData.note" value="%7"/>
+  <alias path="recipeVO.rName" value="%9"/>
+  <alias path="listData" value="%10"/>
+  <alias path="elements.quantity" value="%11"/>
+  <alias path="listData.rName" value="%12"/>
+  <alias path="kindCodeVO" value="%13"/>
+  <alias path="ingreListData" value="%14"/>
+  <alias path="ingreListData.iName" value="%15"/>
+  <alias path="recipeVO.note" value="%16"/>
+  <alias path="theCount" value="%17"/>
+  <alias
+   path="/homeRecipe_springMVC_hibernate/WebContent/recipe/listRcpByCriteriaQuery.jsp" value="%8"/>
+  <alias path="stepList.photo" value="%18"/>
+  <alias path="/homeRecipe_springMVC_hibernate/WebContent/ccc.jsp" value="%2"/>
+  <alias path="cookWayCodeVO" value="%19"/>
+  <alias path="listData.rcpSeq" value="%20"/>
+  <alias path="elements.iName" value="%21"/>
+  <alias path="ingreList" value="%22"/>
+  <alias path="stepList.stepNo" value="%23"/>
+  <alias path="cookWayCodeVO.cookWayName" value="%24"/>
+  <alias path="cookWayCodeVO.cookWayNo" value="%25"/>
+  <alias path="stepList" value="%26"/>
+  <alias path="list" value="%27"/>
+  <alias
+   path="/homeRecipe_springMVC_hibernate/WebContent/recipe/listOneRecipe.jsp" value="%4"/>
+  <alias path="elements" value="%28"/>
+  <alias path="stepList.rcpSeq" value="%29"/>
+  <alias path="stepList.detail" value="%30"/>
+  <alias path="status.last" value="%31"/>
+  <alias path="/homeRecipe_springMVC_hibernate/WebContent/searchBar.jsp" value="%1"/>
+  <alias path="base64Encoded" value="%32"/>
+  <alias path="theCount.count" value="%33"/>
+  <alias path="status" value="%34"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>
