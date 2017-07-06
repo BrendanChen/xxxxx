@@ -36,6 +36,7 @@ public class RecipeServlet extends AbstractController {
 	
 	@GetMapping
 	ModelAndView getMessage(){
+		
 		ModelAndView model = new ModelAndView("index");
 		
 		List<RecipeVO> list = rcpService.getAll();

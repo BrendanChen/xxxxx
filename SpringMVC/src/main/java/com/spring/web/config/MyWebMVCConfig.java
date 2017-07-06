@@ -20,7 +20,7 @@ public class MyWebMVCConfig extends WebMvcConfigurerAdapter {
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/").setViewName("index");
 		registry.addViewController("/index.action").setViewName("index");
-		registry.addViewController("/recipe/recipeForm.action").setViewName("addRecipe");
+		registry.addViewController("/recipe/recipe.do").setViewName("addRecipe");
 	}
 
 	@Bean
