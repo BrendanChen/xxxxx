@@ -1,0 +1,16 @@
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2017-07-04 10:16:10.235
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2017-07-04 10:16:16.230
+!MESSAGE Module SpringMVC on Red Hat JBoss EAP 6.4 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2017-07-04 10:16:16.236
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2017-07-04 10:16:36.247
+!MESSAGE Module SpringMVC on Red Hat JBoss EAP 6.4 still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2017-07-04 10:16:41.796
+!MESSAGE Server processes have been terminated.

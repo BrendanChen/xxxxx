@@ -1,0 +1,85 @@
+package com.spring.config;
+
+import javax.sql.DataSource;
+
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.JpaVendorAdapter;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.Database;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
+
+@EnableWebMvc // <mvc:annotation-driven />
+@Configuration
+@ComponentScan({"com.spring.controller"})
+public class SpringWebConfig extends WebMvcConfigurerAdapter {
+
+	@Override
+	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+		configurer.enable();
+	}
+
+	@Bean
+	public DataSource dataSource() {
+		BasicDataSource ds = new BasicDataSource();
+		ds.setDriverClassName("oracle.jdbc.OracleDriver");
+		ds.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
+		ds.setUsername("Brendan");
+		ds.setPassword("j0o0h0n0");
+		// ds.setMaxActive(10);
+		return ds;
+	}
+
+	@Bean
+	public JpaVendorAdapter jpaVendorAdapter() {
+		HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
+
+		adapter.setDatabase(Database.ORACLE);
+		adapter.setShowSql(true);
+		adapter.setGenerateDdl(false);
+		adapter.setDatabasePlatform("org.hibernate.dialect.Oracle10gDialect");
+		return adapter;
+	}
+
+	@Bean
+	public PlatformTransactionManager jpaTransactionManager() {
+		JpaTransactionManager tm = new JpaTransactionManager();
+		tm.setEntityManagerFactory(this.entityManagerFactory().getObject());
+		return tm;
+	}
+
+	@Bean
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
+		emf.setDataSource(this.dataSource());
+		emf.setPackagesToScan(new String[] { "com.spring.dao", "com.spring.entity" });
+		emf.setJpaVendorAdapter(this.jpaVendorAdapter());
+
+		return emf;
+	}
+
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+	}
+
+	@Bean
+	public InternalResourceViewResolver viewResolver() {
+		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+		viewResolver.setViewClass(JstlView.class);
+		viewResolver.setPrefix("/WEB-INF/views/jsp/");
+		viewResolver.setSuffix(".jsp");
+		return viewResolver;
+	}
+}

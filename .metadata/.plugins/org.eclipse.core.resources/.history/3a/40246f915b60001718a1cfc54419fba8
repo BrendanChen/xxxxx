@@ -1,0 +1,11 @@
+package main.java.com.spring.dao;
+
+import java.util.List;
+
+import main.java.com.spring.entity.CookWayCodeVO;
+
+public interface CookWayDAO_interface {
+	
+	public List<CookWayCodeVO> getAll();
+	
+}

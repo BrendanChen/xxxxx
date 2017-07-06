@@ -1,0 +1,11 @@
+package com.spring.web.config;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import com.spring.app.config.SpringRootConfig;
+import com.spring.app.config.SpringWebConfig;
+
+public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+	
+}

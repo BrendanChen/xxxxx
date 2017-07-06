@@ -1,0 +1,44 @@
+package com.spring.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.spring.entity.StepVO;
+
+@Repository("stepDAO")
+@Transactional
+public class StepDAO implements StepDAO_interface {
+
+	@PersistenceContext
+	private EntityManager entityManager;
+
+	public List<StepVO> getAll() {
+		return null;
+	}
+
+	public void insert(StepVO stepVO) {
+
+	}
+
+	public void update(StepVO stepVO) {
+
+	}
+
+	public void delete(StepVO stepVO) {
+
+	}
+
+	public List<StepVO> findByPrimaryKey(int rcpSeq) {
+
+		CriteriaQuery<StepVO> criteriaQuery = entityManager.getCriteriaBuilder().createQuery(StepVO.class);
+		criteriaQuery.from(StepVO.class);
+		List<StepVO> list = entityManager.createQuery(criteriaQuery).getResultList();
+		return list;
+	}
+}
