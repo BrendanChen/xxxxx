@@ -53,4 +53,14 @@ public class IngreServiceImpl implements IngreService {
 	public List<IngredientVO> findByPkGroupByGroupNo(int rcpSeq, int groupNo) {
 		return ingreDao.findByPkGroupByGroupNo(rcpSeq, groupNo);
 	}
+
+	@Override
+	public List<IngredientVO> findAllGroupByGroupNo(int rcpSeq) {
+		return ingreDao.findAllGroupByGroupNo(rcpSeq);
+	}
+
+	@Override
+	public List<IngredientVO> findByGroupNo(int rcpSeq, int groupNo) {
+		return ingreDao.findByGroupNo(rcpSeq, groupNo);
+	}
 }

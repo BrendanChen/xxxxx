@@ -2,19 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="addCustomer" key="selection"/>
+		<item value="addGroup" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="addCustomer"/>
-			<item value="jstl"/>
-			<item value="jsp"/>
-			<item value="dispatcher"/>
-			<item value="mapping"/>
-			<item value="8081"/>
-			<item value="8080"/>
+			<item value="addGroup"/>
+			<item value="deleteIngredient"/>
+			<item value="removebtn"/>
+			<item value="foodbtn"/>
+			<item value="addIngre"/>
+			<item value="寫食譜"/>
+			<item value="小撇步"/>
+			<item value="養樂多是一種活菌發酵乳"/>
 		</list>
 		<list key="replacehistory">
 		</list>

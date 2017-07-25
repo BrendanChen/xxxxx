@@ -1,9 +1,0 @@
-package com.spring.web.config;
-
-
-@Configuration
-@EnableWebMvc
-@ComponentScan(basePackages={"com.spring.controller"})
-public class MyWebMVCConfig {
-
-}

@@ -27,4 +27,7 @@ public interface IngreService {
 	
 	public List<IngredientVO> findByPkGroupByGroupNo(int rcpSeq,int groupNo);
 	
+	public List<IngredientVO> findAllGroupByGroupNo(int rcpSeq); 
+	
+	public List<IngredientVO> findByGroupNo(int rcpSeq,int groupNo);
 }

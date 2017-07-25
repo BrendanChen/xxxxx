@@ -1,7 +1,0 @@
-package com.mkyong.helloworld.servlet3;
-
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-
-}

@@ -12,21 +12,18 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import javax.transaction.Transactional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.spring.entity.RecipeVO;
 
-
 @Repository("rcpDAO")
-@Transactional
+
 public class RcpDAO implements RcpDAO_interface {
 
 	@PersistenceContext
 	private EntityManager entityManager;
-	
 
 	public List<RecipeVO> getAll() {
 
@@ -52,19 +49,21 @@ public class RcpDAO implements RcpDAO_interface {
 		RecipeVO recipe = entityManager.find(RecipeVO.class, recipeVO.getRcpSeq());
 		entityManager.remove(recipe);
 	}
-
+	
+	@Transactional
 	public RecipeVO findByPrimaryKey(RecipeVO recipeVO) {
 		return entityManager.find(RecipeVO.class, recipeVO.getRcpSeq());
 	}
-
+	
+	@Transactional
 	public List<RecipeVO> findByCriteria(Map<String, String[]> map) {
 
 		List<Predicate> predicates = new ArrayList<Predicate>();
-		
+
 		CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
-		
+
 		CriteriaQuery<RecipeVO> criteria = criteriaBuilder.createQuery(RecipeVO.class);
-		
+
 		Root<RecipeVO> recipeRoot = criteria.from(RecipeVO.class);
 
 		criteria.select(recipeRoot);
@@ -72,7 +71,7 @@ public class RcpDAO implements RcpDAO_interface {
 		Set<String> keys = map.keySet();
 
 		int count = 0;
-		
+
 		for (String key : keys) {
 
 			String value = map.get(key)[0];
@@ -116,16 +115,16 @@ public class RcpDAO implements RcpDAO_interface {
 		TypedQuery<RecipeVO> tq = entityManager.createQuery(criteria);
 
 		List<RecipeVO> list = new ArrayList<RecipeVO>();
-				
+
 		list = tq.getResultList();
-		
+
 		return list;
 	}
-	
+
 	public static void main(String[] args) {
-		
+
 		RcpDAO dao = new RcpDAO();
 		List<RecipeVO> list = dao.getAll();
-		
+
 	}
 }

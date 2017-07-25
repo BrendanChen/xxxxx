@@ -3,10 +3,10 @@
 	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="spring-jpa-unit">
-		<class>com.spring.com.spring.entity.CookWayCodeVO</class>
-		<class>com.spring.com.spring.entity.IngredientVO</class>
-		<class>com.spring.com.spring.entity.KindCodeVO</class>
-		<class>com.spring.com.spring.entity.RecipeVO</class>
-		<class>com.spring.com.spring.entity.StepVO</class>
+		<class>com.spring.entity.CookWayCodeVO</class>
+		<class>com.spring.entity.IngredientVO</class>
+		<class>com.spring.entity.KindCodeVO</class>
+		<class>com.spring.entity.RecipeVO</class>
+		<class>com.spring.entity.StepVO</class>
 	</persistence-unit>
 </persistence>

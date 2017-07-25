@@ -5,6 +5,7 @@ import java.util.Map;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -26,7 +27,7 @@ public class IngreDAO implements IngreDAO_interface {
 
 	@Transactional
 	public List<IngredientVO> getAll() {
-		return entityManager.createNativeQuery("select * from ingredient").getResultList();
+		return entityManager.createNativeQuery("select * from ingredient",IngredientVO.class).getResultList();
 	}
 
 	@Transactional
@@ -111,5 +112,21 @@ public class IngreDAO implements IngreDAO_interface {
 		criteria.where(predicate, predicate2);
 
 		return entityManager.createQuery(criteria).getResultList();
+	}
+
+	@Override
+	@Transactional
+	public List<IngredientVO> findAllGroupByGroupNo(int rcpSeq) {
+		
+		Query query = entityManager.createNativeQuery("select COUNT(*) from ingredient where rcp_seq = :rcp_seq group by group_no order by group_no");
+		query.setParameter("rcp_seq", rcpSeq);
+		List<IngredientVO> list = (List<IngredientVO>)query.getResultList();
+		return list;
+	}
+
+	@Override
+	@Transactional
+	public List<IngredientVO> findByGroupNo(int rcpSeq,int groupNo) {
+		return entityManager.createNativeQuery("select * from ingredient where rcp_seq="+rcpSeq+" and GROUP_NO="+groupNo+"",IngredientVO.class).getResultList();
 	}
 }

@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\workspace6\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\workspace6\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringMVC" path="/SpringMVC" reloadable="true" source="org.eclipse.jst.jee.server:SpringMVC"/></Host>
+      <Context docBase="D:\workspace6\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\workspace6\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringMVC" path="/SpringMVC" reloadable="true" source="org.eclipse.jst.jee.server:SpringMVC"/><Context docBase="D:\workspace6\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\m3Sample" path="/m3Sample" reloadable="true" source="org.eclipse.jst.jee.server:m3Sample"/><Context docBase="D:\workspace6\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Spring_BeanFactory_container" path="/Spring_BeanFactory_container" reloadable="true" source="org.eclipse.jst.jee.server:Spring_BeanFactory_container"/><Context docBase="D:\workspace6\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Spring_Accessing_Facebook_Data" path="/Spring_Accessing_Facebook_Data" reloadable="true" source="org.eclipse.jst.j2ee.server:Spring_Accessing_Facebook_Data"/></Host>
     </Engine>
   </Service>
 </Server>

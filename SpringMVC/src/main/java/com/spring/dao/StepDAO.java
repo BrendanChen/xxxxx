@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import org.springframework.stereotype.Repository;
@@ -41,9 +42,12 @@ public class StepDAO implements StepDAO_interface {
 	@Transactional
 	public List<StepVO> findByPrimaryKey(int rcpSeq) {
 
-		CriteriaQuery<StepVO> criteriaQuery = entityManager.getCriteriaBuilder().createQuery(StepVO.class);
-		criteriaQuery.from(StepVO.class);
-		List<StepVO> list = entityManager.createQuery(criteriaQuery).getResultList();
+		Query query = entityManager.createNativeQuery("select * from step where rcp_seq= :rcp_seq",StepVO.class);
+		
+		query.setParameter("rcp_seq", rcpSeq);
+		
+		List<StepVO> list = (List<StepVO>)query.getResultList();
+		
 		return list;
 	}
 }

@@ -1,5 +1,0 @@
-package com.mkyong.helloworld.config;
-
-public class SpringWebConfig {
-
-}
